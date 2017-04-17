@@ -1,0 +1,175 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'E:\\Programme\\NodeJS\\node.exe',
+1 verbose cli   'C:\\Users\\puelo\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '--save-dev',
+1 verbose cli   'KammererTob/localize-with-spreadsheet#master' ]
+2 info using npm@3.9.0
+3 info using node@v6.6.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData KammererTob/localize-with-spreadsheet#master
+8 silly fetchOtherPackageData KammererTob/localize-with-spreadsheet#master
+9 silly cache add args [ 'KammererTob/localize-with-spreadsheet#master', null ]
+10 verbose cache add spec KammererTob/localize-with-spreadsheet#master
+11 silly cache add parsed spec Result {
+11 silly cache add   raw: 'KammererTob/localize-with-spreadsheet#master',
+11 silly cache add   scope: null,
+11 silly cache add   escapedName: null,
+11 silly cache add   name: null,
+11 silly cache add   rawSpec: 'KammererTob/localize-with-spreadsheet#master',
+11 silly cache add   spec: 'github:kammerertob/localize-with-spreadsheet#master',
+11 silly cache add   type: 'hosted',
+11 silly cache add   hosted:
+11 silly cache add    { type: 'github',
+11 silly cache add      ssh: 'git@github.com:kammerertob/localize-with-spreadsheet.git#master',
+11 silly cache add      sshUrl: 'git+ssh://git@github.com/kammerertob/localize-with-spreadsheet.git#master',
+11 silly cache add      httpsUrl: 'git+https://github.com/kammerertob/localize-with-spreadsheet.git#master',
+11 silly cache add      gitUrl: 'git://github.com/kammerertob/localize-with-spreadsheet.git#master',
+11 silly cache add      shortcut: 'github:kammerertob/localize-with-spreadsheet#master',
+11 silly cache add      directUrl: 'https://raw.githubusercontent.com/kammerertob/localize-with-spreadsheet/master/package.json' } }
+12 verbose addRemoteGit caching KammererTob/localize-with-spreadsheet#master
+13 verbose addRemoteGit kammerertob/localize-with-spreadsheet#master is a repository hosted by github
+14 silly tryGitProto attempting to clone git://github.com/kammerertob/localize-with-spreadsheet.git#master
+15 silly tryClone cloning kammerertob/localize-with-spreadsheet#master via git://github.com/kammerertob/localize-with-spreadsheet.git#master
+16 verbose tryClone git-github-com-kammerertob-localize-with-spreadsheet-git-master-4dea2101 not in flight; caching
+17 verbose correctMkdir C:\Users\puelo\AppData\Roaming\npm-cache\_git-remotes correctMkdir not in flight; initializing
+18 info git [ 'clone',
+18 info git   '--template=C:\\Users\\puelo\\AppData\\Roaming\\npm-cache\\_git-remotes\\_templates',
+18 info git   '--mirror',
+18 info git   'git://github.com/kammerertob/localize-with-spreadsheet.git',
+18 info git   'C:\\Users\\puelo\\AppData\\Roaming\\npm-cache\\_git-remotes\\git-github-com-kammerertob-localize-with-spreadsheet-git-master-4dea2101' ]
+19 verbose mirrorRemote kammerertob/localize-with-spreadsheet#master git clone git://github.com/kammerertob/localize-with-spreadsheet.git
+20 verbose setPermissions kammerertob/localize-with-spreadsheet#master skipping chownr on Windows
+21 verbose resolveHead kammerertob/localize-with-spreadsheet#master original treeish: master
+22 info git [ 'rev-list', '-n1', 'master' ]
+23 silly resolveHead kammerertob/localize-with-spreadsheet#master resolved treeish: 3c54f9d83cae9088d03d9fa50f16331b985759d0
+24 verbose resolveHead kammerertob/localize-with-spreadsheet#master resolved Git URL: git://github.com/kammerertob/localize-with-spreadsheet.git#3c54f9d83cae9088d03d9fa50f16331b985759d0
+25 silly resolveHead Git working directory: C:\Users\puelo\AppData\Local\Temp\npm-1880-ffb750b9\git-cache-7cf8f1f3\3c54f9d83cae9088d03d9fa50f16331b985759d0
+26 info git [ 'clone',
+26 info git   'C:\\Users\\puelo\\AppData\\Roaming\\npm-cache\\_git-remotes\\git-github-com-kammerertob-localize-with-spreadsheet-git-master-4dea2101',
+26 info git   'C:\\Users\\puelo\\AppData\\Local\\Temp\\npm-1880-ffb750b9\\git-cache-7cf8f1f3\\3c54f9d83cae9088d03d9fa50f16331b985759d0' ]
+27 error git clone C:\Users\puelo\AppData\Roaming\npm-cache\_git-remotes\git-github-com-kammerertob-localize-with-spreadsheet-git-master-4dea2101 C:\Users\puelo\AppData\Local\Temp\npm-1880-ffb750b9\git-cache-7cf8f1f3\3c54f9d83cae9088d03d9fa50f16331b985759d0: Cloning into 'C:\Users\puelo\AppData\Local\Temp\npm-1880-ffb750b9\git-cache-7cf8f1f3\3c54f9d83cae9088d03d9fa50f16331b985759d0'...
+27 error git clone C:\Users\puelo\AppData\Roaming\npm-cache\_git-remotes\git-github-com-kammerertob-localize-with-spreadsheet-git-master-4dea2101 C:\Users\puelo\AppData\Local\Temp\npm-1880-ffb750b9\git-cache-7cf8f1f3\3c54f9d83cae9088d03d9fa50f16331b985759d0: done.
+27 error git clone C:\Users\puelo\AppData\Roaming\npm-cache\_git-remotes\git-github-com-kammerertob-localize-with-spreadsheet-git-master-4dea2101 C:\Users\puelo\AppData\Local\Temp\npm-1880-ffb750b9\git-cache-7cf8f1f3\3c54f9d83cae9088d03d9fa50f16331b985759d0: fatal: cannot create directory at 'node_modules/google-spreadsheet/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/lib': No such file or directory
+27 error git clone C:\Users\puelo\AppData\Roaming\npm-cache\_git-remotes\git-github-com-kammerertob-localize-with-spreadsheet-git-master-4dea2101 C:\Users\puelo\AppData\Local\Temp\npm-1880-ffb750b9\git-cache-7cf8f1f3\3c54f9d83cae9088d03d9fa50f16331b985759d0: warning: Clone succeeded, but checkout failed.
+27 error git clone C:\Users\puelo\AppData\Roaming\npm-cache\_git-remotes\git-github-com-kammerertob-localize-with-spreadsheet-git-master-4dea2101 C:\Users\puelo\AppData\Local\Temp\npm-1880-ffb750b9\git-cache-7cf8f1f3\3c54f9d83cae9088d03d9fa50f16331b985759d0: You can inspect what was checked out with 'git status'
+27 error git clone C:\Users\puelo\AppData\Roaming\npm-cache\_git-remotes\git-github-com-kammerertob-localize-with-spreadsheet-git-master-4dea2101 C:\Users\puelo\AppData\Local\Temp\npm-1880-ffb750b9\git-cache-7cf8f1f3\3c54f9d83cae9088d03d9fa50f16331b985759d0: and retry the checkout with 'git checkout -f HEAD'
+28 silly tryHTTPS attempting to clone git+https://github.com/kammerertob/localize-with-spreadsheet.git#master
+29 silly tryClone cloning kammerertob/localize-with-spreadsheet#master via git+https://github.com/kammerertob/localize-with-spreadsheet.git#master
+30 verbose tryClone git-https-github-com-kammerertob-localize-with-spreadsheet-git-master-2858c549 not in flight; caching
+31 verbose correctMkdir C:\Users\puelo\AppData\Roaming\npm-cache\_git-remotes correctMkdir not in flight; initializing
+32 info git [ 'clone',
+32 info git   '--template=C:\\Users\\puelo\\AppData\\Roaming\\npm-cache\\_git-remotes\\_templates',
+32 info git   '--mirror',
+32 info git   'https://github.com/kammerertob/localize-with-spreadsheet.git',
+32 info git   'C:\\Users\\puelo\\AppData\\Roaming\\npm-cache\\_git-remotes\\git-https-github-com-kammerertob-localize-with-spreadsheet-git-master-2858c549' ]
+33 verbose mirrorRemote kammerertob/localize-with-spreadsheet#master git clone https://github.com/kammerertob/localize-with-spreadsheet.git
+34 verbose setPermissions kammerertob/localize-with-spreadsheet#master skipping chownr on Windows
+35 verbose resolveHead kammerertob/localize-with-spreadsheet#master original treeish: master
+36 info git [ 'rev-list', '-n1', 'master' ]
+37 silly resolveHead kammerertob/localize-with-spreadsheet#master resolved treeish: 3c54f9d83cae9088d03d9fa50f16331b985759d0
+38 verbose resolveHead kammerertob/localize-with-spreadsheet#master resolved Git URL: git+https://github.com/kammerertob/localize-with-spreadsheet.git#3c54f9d83cae9088d03d9fa50f16331b985759d0
+39 silly resolveHead Git working directory: C:\Users\puelo\AppData\Local\Temp\npm-1880-ffb750b9\git-cache-a8827f78\3c54f9d83cae9088d03d9fa50f16331b985759d0
+40 info git [ 'clone',
+40 info git   'C:\\Users\\puelo\\AppData\\Roaming\\npm-cache\\_git-remotes\\git-https-github-com-kammerertob-localize-with-spreadsheet-git-master-2858c549',
+40 info git   'C:\\Users\\puelo\\AppData\\Local\\Temp\\npm-1880-ffb750b9\\git-cache-a8827f78\\3c54f9d83cae9088d03d9fa50f16331b985759d0' ]
+41 error git clone C:\Users\puelo\AppData\Roaming\npm-cache\_git-remotes\git-https-github-com-kammerertob-localize-with-spreadsheet-git-master-2858c549 C:\Users\puelo\AppData\Local\Temp\npm-1880-ffb750b9\git-cache-a8827f78\3c54f9d83cae9088d03d9fa50f16331b985759d0: Cloning into 'C:\Users\puelo\AppData\Local\Temp\npm-1880-ffb750b9\git-cache-a8827f78\3c54f9d83cae9088d03d9fa50f16331b985759d0'...
+41 error git clone C:\Users\puelo\AppData\Roaming\npm-cache\_git-remotes\git-https-github-com-kammerertob-localize-with-spreadsheet-git-master-2858c549 C:\Users\puelo\AppData\Local\Temp\npm-1880-ffb750b9\git-cache-a8827f78\3c54f9d83cae9088d03d9fa50f16331b985759d0: done.
+41 error git clone C:\Users\puelo\AppData\Roaming\npm-cache\_git-remotes\git-https-github-com-kammerertob-localize-with-spreadsheet-git-master-2858c549 C:\Users\puelo\AppData\Local\Temp\npm-1880-ffb750b9\git-cache-a8827f78\3c54f9d83cae9088d03d9fa50f16331b985759d0: fatal: cannot create directory at 'node_modules/google-spreadsheet/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/lib': No such file or directory
+41 error git clone C:\Users\puelo\AppData\Roaming\npm-cache\_git-remotes\git-https-github-com-kammerertob-localize-with-spreadsheet-git-master-2858c549 C:\Users\puelo\AppData\Local\Temp\npm-1880-ffb750b9\git-cache-a8827f78\3c54f9d83cae9088d03d9fa50f16331b985759d0: warning: Clone succeeded, but checkout failed.
+41 error git clone C:\Users\puelo\AppData\Roaming\npm-cache\_git-remotes\git-https-github-com-kammerertob-localize-with-spreadsheet-git-master-2858c549 C:\Users\puelo\AppData\Local\Temp\npm-1880-ffb750b9\git-cache-a8827f78\3c54f9d83cae9088d03d9fa50f16331b985759d0: You can inspect what was checked out with 'git status'
+41 error git clone C:\Users\puelo\AppData\Roaming\npm-cache\_git-remotes\git-https-github-com-kammerertob-localize-with-spreadsheet-git-master-2858c549 C:\Users\puelo\AppData\Local\Temp\npm-1880-ffb750b9\git-cache-a8827f78\3c54f9d83cae9088d03d9fa50f16331b985759d0: and retry the checkout with 'git checkout -f HEAD'
+42 silly trySSH attempting to clone git@github.com:kammerertob/localize-with-spreadsheet.git#master
+43 silly tryClone cloning kammerertob/localize-with-spreadsheet#master via git@github.com:kammerertob/localize-with-spreadsheet.git#master
+44 verbose tryClone git-github-com-kammerertob-localize-with-spreadsheet-git-master-afcce9f5 not in flight; caching
+45 verbose correctMkdir C:\Users\puelo\AppData\Roaming\npm-cache\_git-remotes correctMkdir not in flight; initializing
+46 info git [ 'clone',
+46 info git   '--template=C:\\Users\\puelo\\AppData\\Roaming\\npm-cache\\_git-remotes\\_templates',
+46 info git   '--mirror',
+46 info git   'git@github.com:kammerertob/localize-with-spreadsheet.git',
+46 info git   'C:\\Users\\puelo\\AppData\\Roaming\\npm-cache\\_git-remotes\\git-github-com-kammerertob-localize-with-spreadsheet-git-master-afcce9f5' ]
+47 verbose mirrorRemote kammerertob/localize-with-spreadsheet#master git clone git@github.com:kammerertob/localize-with-spreadsheet.git
+48 verbose setPermissions kammerertob/localize-with-spreadsheet#master skipping chownr on Windows
+49 verbose resolveHead kammerertob/localize-with-spreadsheet#master original treeish: master
+50 info git [ 'rev-list', '-n1', 'master' ]
+51 silly resolveHead kammerertob/localize-with-spreadsheet#master resolved treeish: 3c54f9d83cae9088d03d9fa50f16331b985759d0
+52 verbose resolveHead kammerertob/localize-with-spreadsheet#master resolved Git URL: git+ssh://git@github.com/kammerertob/localize-with-spreadsheet.git#3c54f9d83cae9088d03d9fa50f16331b985759d0
+53 silly resolveHead Git working directory: C:\Users\puelo\AppData\Local\Temp\npm-1880-ffb750b9\git-cache-593f9743\3c54f9d83cae9088d03d9fa50f16331b985759d0
+54 info git [ 'clone',
+54 info git   'C:\\Users\\puelo\\AppData\\Roaming\\npm-cache\\_git-remotes\\git-github-com-kammerertob-localize-with-spreadsheet-git-master-afcce9f5',
+54 info git   'C:\\Users\\puelo\\AppData\\Local\\Temp\\npm-1880-ffb750b9\\git-cache-593f9743\\3c54f9d83cae9088d03d9fa50f16331b985759d0' ]
+55 error git clone C:\Users\puelo\AppData\Roaming\npm-cache\_git-remotes\git-github-com-kammerertob-localize-with-spreadsheet-git-master-afcce9f5 C:\Users\puelo\AppData\Local\Temp\npm-1880-ffb750b9\git-cache-593f9743\3c54f9d83cae9088d03d9fa50f16331b985759d0: Cloning into 'C:\Users\puelo\AppData\Local\Temp\npm-1880-ffb750b9\git-cache-593f9743\3c54f9d83cae9088d03d9fa50f16331b985759d0'...
+55 error git clone C:\Users\puelo\AppData\Roaming\npm-cache\_git-remotes\git-github-com-kammerertob-localize-with-spreadsheet-git-master-afcce9f5 C:\Users\puelo\AppData\Local\Temp\npm-1880-ffb750b9\git-cache-593f9743\3c54f9d83cae9088d03d9fa50f16331b985759d0: done.
+55 error git clone C:\Users\puelo\AppData\Roaming\npm-cache\_git-remotes\git-github-com-kammerertob-localize-with-spreadsheet-git-master-afcce9f5 C:\Users\puelo\AppData\Local\Temp\npm-1880-ffb750b9\git-cache-593f9743\3c54f9d83cae9088d03d9fa50f16331b985759d0: fatal: cannot create directory at 'node_modules/google-spreadsheet/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/lib': No such file or directory
+55 error git clone C:\Users\puelo\AppData\Roaming\npm-cache\_git-remotes\git-github-com-kammerertob-localize-with-spreadsheet-git-master-afcce9f5 C:\Users\puelo\AppData\Local\Temp\npm-1880-ffb750b9\git-cache-593f9743\3c54f9d83cae9088d03d9fa50f16331b985759d0: warning: Clone succeeded, but checkout failed.
+55 error git clone C:\Users\puelo\AppData\Roaming\npm-cache\_git-remotes\git-github-com-kammerertob-localize-with-spreadsheet-git-master-afcce9f5 C:\Users\puelo\AppData\Local\Temp\npm-1880-ffb750b9\git-cache-593f9743\3c54f9d83cae9088d03d9fa50f16331b985759d0: You can inspect what was checked out with 'git status'
+55 error git clone C:\Users\puelo\AppData\Roaming\npm-cache\_git-remotes\git-github-com-kammerertob-localize-with-spreadsheet-git-master-afcce9f5 C:\Users\puelo\AppData\Local\Temp\npm-1880-ffb750b9\git-cache-593f9743\3c54f9d83cae9088d03d9fa50f16331b985759d0: and retry the checkout with 'git checkout -f HEAD'
+56 silly fetchPackageMetaData Error: Command failed: git -c core.longpaths=true clone C:\Users\puelo\AppData\Roaming\npm-cache\_git-remotes\git-github-com-kammerertob-localize-with-spreadsheet-git-master-afcce9f5 C:\Users\puelo\AppData\Local\Temp\npm-1880-ffb750b9\git-cache-593f9743\3c54f9d83cae9088d03d9fa50f16331b985759d0
+56 silly fetchPackageMetaData Cloning into 'C:\Users\puelo\AppData\Local\Temp\npm-1880-ffb750b9\git-cache-593f9743\3c54f9d83cae9088d03d9fa50f16331b985759d0'...
+56 silly fetchPackageMetaData done.
+56 silly fetchPackageMetaData fatal: cannot create directory at 'node_modules/google-spreadsheet/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/lib': No such file or directory
+56 silly fetchPackageMetaData warning: Clone succeeded, but checkout failed.
+56 silly fetchPackageMetaData You can inspect what was checked out with 'git status'
+56 silly fetchPackageMetaData and retry the checkout with 'git checkout -f HEAD'
+56 silly fetchPackageMetaData
+56 silly fetchPackageMetaData
+56 silly fetchPackageMetaData     at ChildProcess.exithandler (child_process.js:206:12)
+56 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+56 silly fetchPackageMetaData     at ChildProcess.emit (events.js:191:7)
+56 silly fetchPackageMetaData     at maybeClose (internal/child_process.js:877:16)
+56 silly fetchPackageMetaData     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
+56 silly fetchPackageMetaData  error for KammererTob/localize-with-spreadsheet#master { Error: Command failed: git -c core.longpaths=true clone C:\Users\puelo\AppData\Roaming\npm-cache\_git-remotes\git-github-com-kammerertob-localize-with-spreadsheet-git-master-afcce9f5 C:\Users\puelo\AppData\Local\Temp\npm-1880-ffb750b9\git-cache-593f9743\3c54f9d83cae9088d03d9fa50f16331b985759d0
+56 silly fetchPackageMetaData Cloning into 'C:\Users\puelo\AppData\Local\Temp\npm-1880-ffb750b9\git-cache-593f9743\3c54f9d83cae9088d03d9fa50f16331b985759d0'...
+56 silly fetchPackageMetaData done.
+56 silly fetchPackageMetaData fatal: cannot create directory at 'node_modules/google-spreadsheet/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/lib': No such file or directory
+56 silly fetchPackageMetaData warning: Clone succeeded, but checkout failed.
+56 silly fetchPackageMetaData You can inspect what was checked out with 'git status'
+56 silly fetchPackageMetaData and retry the checkout with 'git checkout -f HEAD'
+56 silly fetchPackageMetaData
+56 silly fetchPackageMetaData
+56 silly fetchPackageMetaData     at ChildProcess.exithandler (child_process.js:206:12)
+56 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+56 silly fetchPackageMetaData     at ChildProcess.emit (events.js:191:7)
+56 silly fetchPackageMetaData     at maybeClose (internal/child_process.js:877:16)
+56 silly fetchPackageMetaData     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
+56 silly fetchPackageMetaData   killed: false,
+56 silly fetchPackageMetaData   code: 128,
+56 silly fetchPackageMetaData   signal: null,
+56 silly fetchPackageMetaData   cmd: 'git -c core.longpaths=true clone C:\\Users\\puelo\\AppData\\Roaming\\npm-cache\\_git-remotes\\git-github-com-kammerertob-localize-with-spreadsheet-git-master-afcce9f5 C:\\Users\\puelo\\AppData\\Local\\Temp\\npm-1880-ffb750b9\\git-cache-593f9743\\3c54f9d83cae9088d03d9fa50f16331b985759d0' }
+57 silly rollbackFailedOptional Starting
+58 silly rollbackFailedOptional Finishing
+59 silly runTopLevelLifecycles Starting
+60 silly runTopLevelLifecycles Finishing
+61 silly install printInstalled
+62 verbose stack Error: Command failed: git -c core.longpaths=true clone C:\Users\puelo\AppData\Roaming\npm-cache\_git-remotes\git-github-com-kammerertob-localize-with-spreadsheet-git-master-afcce9f5 C:\Users\puelo\AppData\Local\Temp\npm-1880-ffb750b9\git-cache-593f9743\3c54f9d83cae9088d03d9fa50f16331b985759d0
+62 verbose stack Cloning into 'C:\Users\puelo\AppData\Local\Temp\npm-1880-ffb750b9\git-cache-593f9743\3c54f9d83cae9088d03d9fa50f16331b985759d0'...
+62 verbose stack done.
+62 verbose stack fatal: cannot create directory at 'node_modules/google-spreadsheet/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/lib': No such file or directory
+62 verbose stack warning: Clone succeeded, but checkout failed.
+62 verbose stack You can inspect what was checked out with 'git status'
+62 verbose stack and retry the checkout with 'git checkout -f HEAD'
+62 verbose stack
+62 verbose stack
+62 verbose stack     at ChildProcess.exithandler (child_process.js:206:12)
+62 verbose stack     at emitTwo (events.js:106:13)
+62 verbose stack     at ChildProcess.emit (events.js:191:7)
+62 verbose stack     at maybeClose (internal/child_process.js:877:16)
+62 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
+63 verbose cwd E:\Dokumente\Arbeit\others\BH88\localize-with-spreadsheet
+64 error Windows_NT 6.1.7601
+65 error argv "E:\\Programme\\NodeJS\\node.exe" "C:\\Users\\puelo\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "install" "--save-dev" "KammererTob/localize-with-spreadsheet#master"
+66 error node v6.6.0
+67 error npm  v3.9.0
+68 error code 128
+69 error Command failed: git -c core.longpaths=true clone C:\Users\puelo\AppData\Roaming\npm-cache\_git-remotes\git-github-com-kammerertob-localize-with-spreadsheet-git-master-afcce9f5 C:\Users\puelo\AppData\Local\Temp\npm-1880-ffb750b9\git-cache-593f9743\3c54f9d83cae9088d03d9fa50f16331b985759d0
+69 error Cloning into 'C:\Users\puelo\AppData\Local\Temp\npm-1880-ffb750b9\git-cache-593f9743\3c54f9d83cae9088d03d9fa50f16331b985759d0'...
+69 error done.
+69 error fatal: cannot create directory at 'node_modules/google-spreadsheet/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/lib': No such file or directory
+69 error warning: Clone succeeded, but checkout failed.
+69 error You can inspect what was checked out with 'git status'
+69 error and retry the checkout with 'git checkout -f HEAD'
+70 error If you need help, you may report this error at:
+70 error     <https://github.com/npm/npm/issues>
+71 verbose exit [ 1, true ]
