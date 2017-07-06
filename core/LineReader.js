@@ -46,12 +46,12 @@ GSReader.prototype.fetchAllCells = function () {
     }
 }
 
-GSReader.prototype.select = function (keyCol, valCol) {
+GSReader.prototype.select = function (keyCol, fallbackValCol, valCol) {
     var deferred = Q.defer();
     var self = this;
 
     Q.when(self.fetchAllCells(), function (worksheets) {
-        var extractedLines = self.extractFromRawData(worksheets, keyCol, valCol);
+        var extractedLines = self.extractFromRawData(worksheets, keyCol, fallbackValCol, valCol);
         deferred.resolve(extractedLines);
     }).fail(function (error) {
         //console.error('Cannot fetch data');
@@ -60,24 +60,24 @@ GSReader.prototype.select = function (keyCol, valCol) {
     return deferred.promise;
 };
 
-GSReader.prototype.extractFromRawData = function (rawWorksheets, keyCol, valCol) {
+GSReader.prototype.extractFromRawData = function (rawWorksheets, keyCol, fallbackValCol, valCol) {
     var extractedLines = [];
     for (var i = 0; i < rawWorksheets.length; i++) {
-        var extracted = this.extractFromWorksheet(rawWorksheets[i], keyCol, valCol);
+        var extracted = this.extractFromWorksheet(rawWorksheets[i], keyCol, fallbackValCol, valCol);
         extractedLines.push.apply(extractedLines, extracted);
     }
 
     return extractedLines;
 }
 
-GSReader.prototype.extractFromWorksheet = function (rawWorksheet, keyCol, valCol) {
+GSReader.prototype.extractFromWorksheet = function (rawWorksheet, keyCol, fallbackValCol, valCol) {
     var results = [];
 
     var rows = this.flatenWorksheet(rawWorksheet);
 
     var headers = rows[0];
     if (headers) {
-        var keyIndex = -1, valIndex = -1;
+        var keyIndex = -1, valIndex = -1; fallbackValIndex = -1;
         for (var i = 0; i < headers.length; i++) {
             var value = headers[i];
             if (value == keyCol) {
@@ -86,12 +86,19 @@ GSReader.prototype.extractFromWorksheet = function (rawWorksheet, keyCol, valCol
             if (value == valCol) {
                 valIndex = i;
             }
+            if (value == fallbackValCol) {
+                fallbackValIndex = i;
+            }
         }
         for (var i = 1; i < rows.length; i++) {
             var row = rows[i];
             if (row) {
                 var keyValue = row[keyIndex];
                 var valValue = row[valIndex];
+
+                if (!valValue) {
+                  valValue = row[fallbackValIndex]
+                }
 
                 results.push(new Line(keyValue, valValue));
             }
@@ -212,5 +219,3 @@ module.exports = {
     GS: GSReader,
     Fake: FakeReader
 }
-
-
